@@ -23,7 +23,7 @@ function submitForm(event) {
     let n1 = n1Elem.value;
 
     if(checkBtn.onclick) {
-        result = n1 * 2
+        cdresult = n1 * 2
     }
 }
 
