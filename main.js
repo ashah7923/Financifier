@@ -1,4 +1,24 @@
+let submitBtn = document.getElementById("submit-btn");
+submitBtn.addEventListener("click", submitForm1);
 
+
+function submitForm1(event){
+    event.preventDefault();
+
+    let incomeElem = document.getElementById("income");
+
+    let income = incomeElem.value;
+
+    let needs = document.getElementById("needs_txt");
+    needs.innerHTML = `$${Math.round((income / 2) * 100)/100}`;
+
+    let wants = document.getElementById("wants_txt");
+    wants.innerHTML = `$${Math.round((income * 0.3) * 100)/100}`;
+
+    let savings = document.getElementById("savings_txt");
+    savings.innerHTML = `$${Math.round((income * 0.2) * 100)/100}`;
+
+}
 
 
 
@@ -9,7 +29,7 @@ let n1Elem = document.getElementById("price_stuff");
 let totalCost = document.getElementById("total_cost");
 
 let submit = document.getElementById("submit-btn_3");
-submit.addEventListener("click", submitForm);
+submit.addEventListener("click", submitForm2);
 
 n1Elem.addEventListener('change', updateValue);
 
@@ -17,7 +37,7 @@ function updateValue(e) {
     totalCost.textContent = e.target.value;
 }
 
-function submitForm(event) {
+function submitForm2(event) {
     event.preventDefault();
 
     let n1 = n1Elem.value;
@@ -75,5 +95,4 @@ class User {
         return parentDiv;
     }
 }
-
 
