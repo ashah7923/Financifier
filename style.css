@@ -108,3 +108,20 @@ nav {
     justify-content: flex-start;
 }
 
+#needs_txt {
+    position: absolute;
+    left: 200px;
+    top: 2118px;
+}
+
+#wants_txt{
+    position: absolute;
+    left: 205px;
+    top: 2182px;
+}
+
+#savings_txt{
+    position: absolute;
+    left: 220px;
+    top: 2246px;
+}
