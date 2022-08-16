@@ -107,21 +107,36 @@ nav {
     display: flex;
     justify-content: flex-start;
 }
+#submit-btn #income {
+    display: block;
+}
 
-#needs_txt {
-    position: absolute;
-    left: 200px;
-    top: 2118px;
+
+#needs_whole{
+    display:flex;
+    align-items: baseline;
+    margin-bottom:-30px;
+}
+
+#needs_txt{
+    margin: 10px;
+}
+#wants_whole{
+    display:flex;
+    align-items: baseline;
+    margin-bottom:-30px;
 }
 
 #wants_txt{
-    position: absolute;
-    left: 205px;
-    top: 2182px;
+    margin: 10px;
+}
+
+#savings_whole{
+    display:flex;
+    align-items: baseline;
+    margin-bottom:-30px;
 }
 
 #savings_txt{
-    position: absolute;
-    left: 220px;
-    top: 2246px;
+    margin: 10px;
 }
